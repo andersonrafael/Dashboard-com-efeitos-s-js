@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: #1b1d1d;
+}
+
+nav a {
+
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #3b3d3c;
+    padding: 6px 20px;
+    transition: 1.2s;
+}
+
+nav a:hover {
+    color: rgba(10, 219, 251, 0.979);
+}
+
+nav a span {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid rgb(255, 30, 0);
+    border-radius: 10px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 10px;
+}
